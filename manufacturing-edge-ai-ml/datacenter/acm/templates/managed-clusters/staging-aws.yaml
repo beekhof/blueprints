@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: staging-aws
   annotations:
-    argocd.argoproj.io/sync-wave: 1
+    argocd.argoproj.io/sync-wave: "1"
   labels:
     app.kubernetes.io/managed-by: openshift-gitops
 ---
@@ -18,7 +18,7 @@ metadata:
     manuela: factory
   name: staging-aws
   annotations:
-    argocd.argoproj.io/sync-wave: 2
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   hubAcceptsClient: true
 ---
@@ -28,7 +28,7 @@ metadata:
   name: staging-aws
   namespace: staging-aws
   annotations:
-    argocd.argoproj.io/sync-wave: 2
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   clusterName: staging-aws
   clusterNamespace: staging-aws

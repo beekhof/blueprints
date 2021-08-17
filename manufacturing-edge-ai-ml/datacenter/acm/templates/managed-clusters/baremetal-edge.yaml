@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: baremetal-edge
   annotations:
-    argocd.argoproj.io/sync-wave: 1
+    argocd.argoproj.io/sync-wave: "1"
   labels:
     app.kubernetes.io/managed-by: openshift-gitops
 ---
@@ -18,7 +18,7 @@ metadata:
     manuela: factory
   name: baremetal-edge
   annotations:
-    argocd.argoproj.io/sync-wave: 2
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   hubAcceptsClient: true
 ---
@@ -28,7 +28,7 @@ metadata:
   name: baremetal-edge
   namespace: baremetal-edge
   annotations:
-    argocd.argoproj.io/sync-wave: 2
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   clusterName: baremetal-edge
   clusterNamespace: baremetal-edge
