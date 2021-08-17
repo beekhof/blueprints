@@ -13,6 +13,8 @@ metadata:
     gitops-mgmt: argocd
     manuela: factory
   name: staging
+  annotations:
+    argocd.argoproj.io/sync-wave: 2
 spec:
   hubAcceptsClient: true
 ---
@@ -21,6 +23,8 @@ kind: KlusterletAddonConfig
 metadata:
   name: staging
   namespace: staging
+  annotations:
+    argocd.argoproj.io/sync-wave: 2
 spec:
   clusterName: staging
   clusterNamespace: staging
