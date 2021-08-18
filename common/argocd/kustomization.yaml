@@ -5,7 +5,6 @@ namespace: argocd
 
 bases:
 - ../team-rolebindings
-- ../jobs/installplan-approver
 
 resources:
 - argocd-namespace.yaml
