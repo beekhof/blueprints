@@ -13,4 +13,3 @@ resources:
 
 bases:
 - ../../../templates/manuela-team-rolebindings
-  #- ../../../templates/installplan-approver
